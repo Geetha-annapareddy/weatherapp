@@ -18,7 +18,7 @@ public class WeatherService {
 //		return webClient;
 //	}
 	public Mono<ApiResponse> getWeatherData(String city,String units) {
-        String apiKey = "0f559a2e806db568bfa821a5f836d33f";
+        String apiKey = "API-KEY(xxxxx)";
         return webClient.get()
                 .uri(uriBuilder -> uriBuilder.path("/weather")
                         .queryParam("q", city)
